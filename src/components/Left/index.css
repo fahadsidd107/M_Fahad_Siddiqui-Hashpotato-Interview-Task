@@ -1,0 +1,13 @@
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 22px;
+}
+.list{
+    background-color: transparent !important;
+    color: azure;
+    font-size: 10px;
+    line-height: 1px;
+
+}
