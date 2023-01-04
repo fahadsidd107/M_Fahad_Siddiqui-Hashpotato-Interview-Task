@@ -42,20 +42,23 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .bond-discount{
-    padding-left: 2rem;
     margin-bottom: -0.5rem;
     color: #6A6971;
     align-items: center; 
 }
 
 .bond-discount-list{
-    padding-left: 5rem;
+    width: 60%;
+    padding-left: 4rem;
+    margin-bottom: -2rem;
     color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+   
 }
