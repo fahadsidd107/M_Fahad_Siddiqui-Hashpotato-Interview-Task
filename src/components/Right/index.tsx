@@ -11,29 +11,23 @@ function Right() {
   <h2>EPOCH STAKING</h2>
 </div>
 
-  {/* // right.map(item=>{ */}
-  {/* // <>
-  // <div className='box'>
-  //       <p>PASS Price</p>
-  //       <h2>$1520.33</h2>
-  //   </div>
-  // </>   */}
-
-
+<div className='boxes-parent-container'>
+<div  className='box-container'>
 {left?.map((item) => {
     const box = (
       <>
      <div className='box'>
-         <p>{item.title}</p>
-         <h2>{item.cost}</h2>
+         <p className='title'>{item.title}</p>
+         <h2 className='cost'>{item.cost}</h2>
      </div>
       </>
     );
     return box;
   })}
+</div>
 
-
-  {right?.map((item) => {
+<div   className='box-container'>
+{right?.map((item) => {
     const box = (
       <>
      <div className='box'>
@@ -44,6 +38,14 @@ function Right() {
     );
     return box;
   })}
+</div>
+</div>
+
+
+
+
+
+
 
 
     </div>

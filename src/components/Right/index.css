@@ -46,19 +46,47 @@
     backdrop-filter: blur(15px);
 }
 
-.heading{
+.heading {
     margin-top: 22px;
- color: #F89E1B;
+    color: #F89E1B;
     display: flex;
     flex-direction: row;
     align-self: center;
     justify-content: center;
 }
-.box{
+
+.box {
+    width: 300px;
+    height: 100px;
+    line-height: 14px;
     background: rgba(38, 38, 53, 0.1);
     backdrop-filter: blur(12.5px);
-border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    color: white;
+    padding-top: 10px;
 
-border-radius: 15px;
-color: white;
+}
+
+.title{
+    font-size: 14px;
+}
+
+.cost{
+    font-size: 26px;
+}
+
+.boxes-parent-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.box-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
 }
