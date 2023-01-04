@@ -35,3 +35,27 @@
     align-items: center;
     gap: 2rem;
 }
+.parent-list{
+    padding-left: 2rem;
+    margin-bottom: -1.8rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bond-discount{
+    padding-left: 2rem;
+    margin-bottom: -0.5rem;
+    color: #6A6971;
+    align-items: center; 
+}
+
+.bond-discount-list{
+    padding-left: 5rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

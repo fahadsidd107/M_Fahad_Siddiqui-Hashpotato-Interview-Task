@@ -1,36 +1,43 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartLine, faSliders } from "@fortawesome/free-solid-svg-icons";
+import Dashboard from '../../asset/dashboard.png'
+import Analytics from '../../asset/analytics.png'
+import Stake from '../../asset/stake.png'
+import Band from '../../asset/band.png'
+import BuyPass from '../../asset/buypass.png'
+import PriceChart from '../../asset/pricechart.png'
+import Documentation from '../../asset/documentation.png'
 
 export const upperList = [
   {
-    icon: faSliders,
+    icon: Dashboard,
     label: "Dashboard",
   },
   {
-    icon: faChartLine,
+    icon: Analytics,
     label: "Analytics",
   },
   {
-    icon: faChartLine,
+    icon: Stake,
     label: "Stake",
   },
   {
-    icon: faChartLine,
+    icon: Band,
     label: "Band",
   },
 ];
 
 export const lowerList = [
     {
-        icon: faChartLine,
+        icon: BuyPass,
         label: "Buy PASS",
       },
       {
-        icon: faChartLine,
-        label: "Stake",
+        icon: PriceChart,
+        label: "Price Chart",
       },  {
-        icon: faChartLine,
-        label: "Stake",
+        icon: Documentation,
+        label: "Documentation",
       }
   ];
 
@@ -44,17 +51,16 @@ export const bandDiscount =[
         percentage: "-16.28%",
       },
       {
-        coin: faChartLine,
-        percentage: "Stake",
+        coin: "XIV",
+        percentage: "-16.28%",
       },
       {
-        coin: faChartLine,
-        percentage: "Band",
-      }, 
-]
+        coin: "BNB",
+        percentage: "-16.28%",
+      },
+      {
+        coin: "BUSD",
+        percentage: "-16.28%",
+      },
 
-      // XIV-BNB LP  -16.28%
-      // PASS-BNB LP -16.28%
-      // XIV -16.28%
-      // BNB -16.28%
-      // BUSD -16.28%
+]

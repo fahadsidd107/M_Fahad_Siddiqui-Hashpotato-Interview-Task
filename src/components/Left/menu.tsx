@@ -1,86 +1,54 @@
-import { Menu } from 'antd'
+import { Image, Menu } from 'antd'
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartLine, faSliders } from '@fortawesome/free-solid-svg-icons';
 import "./index.css";
+import { bandDiscount, lowerList, upperList } from './constant';
 
-export const items = [
-  {
-    key: "Dashboard",
-    icon: <FontAwesomeIcon icon={faSliders} />,
-    label: "Dashboard",
-  },
-  {
-    key: "Analytics",
-    icon: <FontAwesomeIcon icon={faChartLine} />,
-    label: "Analytics",
-  },
-  {
-    key: "Stake",
-    icon: <FontAwesomeIcon icon={faChartLine} />,
-    label: "Stake",
-  },
-  {
-    key: "Band",
-    icon: <FontAwesomeIcon icon={faChartLine} />,
-    label: "Band",
-  },
-    {
-    key: "BandDiscount",
-    icon: <FontAwesomeIcon icon={faChartLine} />,
-    label: "Stake",
-    children: [
-      {
-        key: "users",
-        label: (
-          <div className='list-children'>
-           <p>XIV-BNB LP</p>
-           <p>-16.28%</p>
-          </div>
-        ),
-      },
-
-      {
-        key: "products",
-        label: "Products",
-      },
-      {
-        key: "roles",
-        label: "Roles And Permission",
-      },
-    ],
-    // {
-      // XIV-BNB LP  -16.28%
-      // PASS-BNB LP -16.28%
-      // XIV -16.28%
-      // BNB -16.28%
-      // BUSD -16.28%
-    // }
-  },
-  {
-    key: "Buy PASS",
-    icon: <FontAwesomeIcon icon={faChartLine} />,
-    label: "Buy PASS",
-  },
-  {
-    key: "Price Chart",
-    icon: <FontAwesomeIcon icon={faChartLine} />,
-    label: "Stake",
-  },  {
-    key: "Documentation",
-    icon: <FontAwesomeIcon icon={faChartLine} />,
-    label: "Stake",
-  }
-
-
-];
 
 function List() {
   return (
     <div>
       <div>
+      {upperList?.map((item) => {
+    const upper = (
+      <>
+     <div className='parent-list'>
+     <Image src={item.icon} alt="Logo" width={18} preview={false} /><h6>{item.label}</h6>
+     </div>
+      </>
+    );
+    return upper;
+  })}  
+      </div>
 
-        <Menu items={items} className="list" />
+<div>
+<h6 className='bond-discount'>Bond Discount</h6>
+{bandDiscount?.map((item) => {
+    const upper = (
+      <>
+     <div className='bond-discount-list'>
+     <h6>{item.coin}</h6><h6>{item.percentage}</h6>
+     </div>
+      </>
+    );
+    return upper;
+  })} 
+</div>
+    
+
+
+      <div>
+      {lowerList?.map((item) => {
+    const lower = (
+      <>
+     <div className='parent-list'>
+     <Image src={item.icon} alt="Logo" width={18} preview={false} /><h6>{item.label}</h6>
+     </div>
+      </>
+    );
+    return lower;
+  })}  
       </div>
 
     </div>
